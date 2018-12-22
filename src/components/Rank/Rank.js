@@ -1,11 +1,11 @@
 import React from 'react';
 import './Rank.css';
 
-const Rank = () => {
+const Rank = ({ name, entries }) => {
   return (
     <div>
-      <div className="white f3">{'Alex, your current rank is...'}</div>
-      <div className="white f1">{'#1'}</div>
+      <div className="white f3">{`${name}, the number of photos you have sumbitted is`}</div>
+      <div className="white f1">{`${entries}!`}</div>
     </div>
   );
 };
